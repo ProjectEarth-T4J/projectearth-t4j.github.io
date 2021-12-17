@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <title>2021년 톡방 어워드 감상</title>
+</head>
+<body>
+    <header id='header'>
+        <a href="#" class='logo'>안녕하신지</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Content</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="text"><span>2021년 어워드 결산</span><br>하이하이</h2>
+        
+        <img src="/images/bird1.png" id="bird1">
+        <img src="/images/bird2.png" id="bird2">
+        <img src="/images/forest.png" id="forest">
+        
+        <a href="#" id='btn'>드가자</a>
+
+        <img src="/images/rocks.png" id="rocks">
+        <img src="/images/water.png" id="water">
+
+    </section>
+
+    <script>
+        let text = document.getElementById('text');
+        let bard1 = document.getElementById('bird1');
+        let bard2 = document.getElementById('bird2');
+        let forest = document.getElementById('forest');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let btn = document.getElementById('btn');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+
+            text.style.top = 40 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * -0.12 + 'px';
+            header.style.top = value * -0.5 + 'px';
+        })
+    </script>
+
+
+    <div class="sec">
+        <h2>하이요 ㅎㅎ</h2>
+        <p>대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
+            
+        </p>
+    </div>
+</body>
+</html>
