@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="base.css">
-    <title>2021년 톡방 어워드 감상</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>4조 미니프로젝트 </title>
 </head>
 <body>
-    <header id='header'>
+    <!-- <header id='header'>
         <a href="#" class='logo'>안녕하신지</a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
@@ -14,66 +17,200 @@
             <li><a href="#">Destination</a></li>
             <li><a href="#">Content</a></li>
         </ul>
-    </header>
+    </header> -->
 
-    <section>
-        <h2 id="text"><span>2021년 어워드 결산</span><br>하이하이</h2>
+    <section class='main_section'>
+        <h2 id="text"><span>지구 기후 변화</span><br>4조</h2>
         
         <img src="./images/bird1.jpg" id="bird1">
         <img src="./images/bird2.jpg" id="bird2">
         <img src="./images/forest.jpg" id="forest">
         
-        <a href="#" id='btn'>드가자</a>
+        <a href="#" id='btn'>홈으로</a>
 
         <img src="./images/rocks.jpg" id="rocks">
         <img src="./images/water.jpg" id="water">
 
     </section>
 
-    <script>
-        let text = document.getElementById('text');
-        let bard1 = document.getElementById('bird1');
-        let bard2 = document.getElementById('bird2');
-        let forest = document.getElementById('forest');
-        let rocks = document.getElementById('rocks');
-        let water = document.getElementById('water');
-        let btn = document.getElementById('btn');
-        let header = document.getElementById('header');
-
-        window.addEventListener('scroll',function(){
-            let value = window.scrollY;
-
-            text.style.top = 40 + value * -0.5 + '%';
-            bird1.style.top = value * -1.5 + 'px';
-            bird1.style.left = value * 2 + 'px';
-            bird2.style.top = value * -1.5 + 'px';
-            bird2.style.left = value * -5 + 'px';
-
-            btn.style.marginTop = value * 1.5 + 'px';
-            rocks.style.top = value * -0.12 + 'px';
-            forest.style.top = value * -0.12 + 'px';
-            header.style.top = value * -0.5 + 'px';
-        })
-    </script>
-
-
     <div class="sec">
-        <h2>하이요 ㅎㅎ</h2>
-        <p>대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글대충 긴 글<br>
-            
-        </p>
+
+        <div data-aos="fade-right" data-aos-easing="ease-in-out" style="text-align: center;">
+            <img class="img_wrap zoom" src="./images/butterflyeffect.jpg">
+        </div>
+        <h3 data-aos="fade-right" data-aos-easing="ease-in-out"> 다들 한번쯤은 봤을 무한도전 나비효과 편</h3>
+        <br>
+        <h2>최근에 너무나도 많아진 자연재해</h2>
+        <br>
+        <p>예전부터 뉴스, 예능에서 자주 언급되었던 지구온난화, 자연재해 등등 가볍게 여겼던 문제들이 최근에는<br></p>
+        <p>우리 생활에서 몸으로 느껴질 만큼 너무나도 큰 이슈로 다가오게 되었다.</p>
+
+
+        <div class='post'>
+            <div class='post-img'>
+                <img src='./images/wildfire.jpg' data-aos="fade-right" class='zoom'>
+            </div>
+            <div class='post__info'>
+                <div class='post__date'>
+                    <span>2019년 9월 ~2020년 2월</span>
+                    <span>호주</span>
+                </div>
+                <h1 class='post_title'>호주 최악의 산불</h1>
+                <p class='post_text'>
+                    뉴 사우스웨일스 주를 비롯한 빅토리아 주 등 오스트레일리아 남동부 해변지역이 큰 피해를 입었다.
+                    산불로 인한 총 사망자 수는 28명, 그 중 소방대원이 10명이 사망, 건물 5700채가 전소 되었으며,
+                    야생 동물, 곤충 등을 포함해서 12억 7000여마리가 소사했다.
+                </p>
+            </div>
+        </div>
+
+        <div class='post'>
+            <div class='post-img'>
+                <img src='./images/36.jpg' data-aos="fade-right" class='zoom'>
+            </div>
+            <div class='post__info'>
+                <div class='post__date'>
+                    <span>2021년 여름</span>
+                    <span>미국 콜로라도</span>
+                </div>
+                <h1 class='post_title'>극심한 기온변화</h1>
+                <p class='post_text'>
+                    미국 콜로라도에서 하루에 35도 가량의 기온 변화가 일어남. <br>
+                    한 여름 미국에서 눈이 내리는 기적이 일어나버림
+                </p>
+            </div>
+        </div>
+
+        <div class='post'>
+            <div class='post-img'>
+                <img src='./images/america.jpg' data-aos="fade-right" class='zoom'>
+            </div>
+            <div class='post__info'>
+                <div class='post__date'>
+                    <span>2021년 여름</span>
+                    <span>미국, 캐나다 서부 지역</span>
+                </div>
+                <h1 class='post_title'>열돔 현상</h1>
+                <p class='post_text'>
+                    2021년 미국, 캐나다 서부 지역에서 일어난 폭염 사태 <br>
+                    미국 캘리포니아 데스밸리가 54도 까지 치솟고 근처 지역에서는 섭씨 40~50도에 달하는 폭염과 가뭄이 있었음
+                    캐나다에서 폭염으로 719명이 사망 , 미국에서는 약 150명이 사망했다.
+                </p>
+            </div>
+        </div>
+
+        <div class='post'>
+            <div class='post-img'>
+                <img src='./images/turkey.jpg' data-aos="fade-right" class='zoom'>
+            </div>
+            <div class='post__info'>
+                <div class='post__date'>
+                    <span>2021년 7월</span>
+                    <span>터키</span>
+                </div>
+                <h1 class='post_title'>터키 산불</h1>
+                <p class='post_text'>
+                    7월 30일 기준 터키 남부 지중해 주 22개 도에서 71건의 산불로 8명이 사망하고 200명 이상이 부상당하는 사건. 
+                    터키에서 네티즌이 터키를 돕자는 해시태크를 붙이자 터키 정부에서 국가에 대한 모욕이라며 해당 태그를 단 계정을 전부 블락해버렸던사건
+
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+            <input type="checkbox" name='features' id="features" value="premium">
+            <label for="features" style="margin-top: 10rem; text-align: center;">그 외</label>
+            <p style="font-size: 1.5rem;"> 전부 2021년에 일어난 사건 </p>
+
+            <ul class="featured" style="--length: 5">
+                <li style="--index: 0">
+                    <img src="./images/C.jpg" class="slave2 zoom">
+                </li>
+                <li style="--index: 1">
+                    <img src="./images/China.jpg" class="slave2 zoom">
+                </li>
+                <li style="--index: 2">
+                    <img src="./images/Greece.jpg" class="slave2 zoom">
+                </li>
+                <li style="--index: 3">
+                    <img src="./images/Greece_flood.jpg" class="slave2 zoom">
+                </li>
+                <li style="--index: 4">
+                    <img src="./images/tornado.jpg" class="slave2 zoom">
+                </li>
+            </ul>
+        </div>
+
     </div>
+
+    <section class='sub_section dark'>
+        <div class='content'>
+            <h2>데이터 분석</h2>
+            <br>
+            <p style="margin-bottom: 100rem;">자료 부분 </p>
+            
+        </div>
+        <img class="img_sub" src='./images/wildfire.jpg'>
+    </section>
+
+
+    <div class='sec'>
+        <h2 style="margin-top: 5rem;">
+            재난이 실제로 많이 일어났을까?
+        </h2>
+        <span> 그냥 내 감이 그렇다고 생각하고 있는게 아닐까?</span>
+        
+        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
+            <img class="zoom img_wrap2" src="./images/all_disaster.jpg" >
+
+            <br>
+        </div>
+        <span style="color: rgb(204, 204, 204);">1880~2019년 대규모 자연재해 </span><br>
+        
+        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
+            <img class="zoom img_wrap2" src="./images/flood.jpg" >
+            <br>
+        </div>
+        <span style="color: rgb(204, 204, 204);">1880~2019년 대규모 홍수 </span><br>
+
+        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
+            <img class="zoom img_wrap2" src="./images/df_wildfire.jpg" >
+            <br>
+        </div>
+        <span style="color: rgb(204, 204, 204);">1880~2019년 대규모 산불 </span><br>
+
+        <h2> 지구 평균온도 변화 </h2>
+        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
+            <img class="zoom img_wrap2" src="./images/mean_temperture.jpg" >
+            <br>
+        </div>
+        <span style="color: rgb(204, 204, 204);"> 평균 온도 오차 </span><br>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js" integrity="sha512-K7WgwKJAJIRoRV8yDALsY4+CZhsWKk0gVFotVxC2RzCRyoEVyWH1DRDjxw2DdBKdZdBMPr4cacHbYbNco9wOvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        //AOS
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <!-- <script>
+    console.log(this);
+
+    document.addEventListener("mousewheel", this.mousewheel.bind(this), { passive: false });
+    document.addEventListener("wheel",function(e){
+        let Scrollbar = window.Scrollbar;
+
+        Scrollbar.init(document.querySelector('#my-scrollbar'));
+    },{passive:false});
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
+    <script src="./client.js"></script>
+    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
 </body>
+
 </html>
