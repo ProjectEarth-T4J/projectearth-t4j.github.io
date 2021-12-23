@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Poppins:wght@200;300;500&display=swap');
 
-
-
 *
 {
     margin :0;
@@ -11,12 +9,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     overflow: hidden;
     background: #fff;
     min-height: 100vh;
     overflow-y: scroll;
-    overflow-x: scroll;
 }
 
 #header{
@@ -64,7 +68,7 @@ body{
     color: #fff;
 }
 
-section{
+.main_section{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -73,7 +77,7 @@ section{
     align-items: center;
 }
 
-section::before{
+.main_section::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -84,7 +88,7 @@ section::before{
     z-index: 10;
 }
 
-section #text{
+.main_section #text{
     position: absolute;
     color: #094b65;
     font-size: 10vw;
@@ -93,15 +97,14 @@ section #text{
     font-family: 'Do Hyeon', sans-serif;
     transform: translateY(-50%);
 }
-
-section #text span{
+.main_section #text span{
     font-size: 0.20em;
     letter-spacing: 2px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
 
-section img{
+.main_section img{
     position: absolute;
     top: 0;
     left: 0;
@@ -129,6 +132,10 @@ section img{
     padding: 100px;
     background: #094b65;
     color: white;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 .sec h2{
@@ -142,3 +149,272 @@ section img{
     columns: #fff;
 }
 
+.img_wrap{
+    position: relative;
+    border-radius: 30px;
+    width: 500px;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+
+.graph{
+    background: white;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.img_wrap2{
+    position: relative;
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+
+
+.sub_section{
+    height: 100vh;
+    text-align: center;
+}
+
+.box_scroll{
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+.dark{
+    text-align: left;
+    background: #539ebe;
+    color: white;
+    position: relative;
+}
+
+.dark::before{
+    content: '';
+    position: absolute;
+    top : 0px;
+    right: 0px;
+    left : 0px;
+    bottom : 0px;
+    /* background-image: url('./images/bonobono.jpg'); */
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.25;
+}
+
+.img_sub{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.content{
+    padding: 9em 5em;
+    z-index: 1;
+    position: relative;
+}
+
+.content h2{
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+.content p{
+    font-size: 1.6em;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgb(105, 105, 105);
+}
+
+::-webkit-scrollbar-thumb{
+
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #001a12;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.post{
+    margin-top: 10rem;
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: rgb(219, 231, 250);
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+}
+
+.post-img{
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+
+.post-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: .8rem;
+}
+
+/* .post-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    border-radius: .8rem;
+} */
+
+.post__date span{
+    display: block;
+    color: rgba(0,0,0, .5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.post_title{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #4facfe;
+}
+
+.post_text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+
+.right{
+    position: relative;
+    overflow: hidden;
+}
+
+.right label{
+    font-size: 7em;
+    font-weight: bold;
+}
+
+.right ul{
+    list-style-type: none;
+    display: flex;
+    margin: 1.5em 0;
+    justify-content: center;
+
+}
+.right ul li{
+    margin-bottom: .5em;
+    font-size: 1.2em;
+    color: #A0a0a0;
+    float: left;
+    margin-right: 3rem;
+
+}
+
+.right ul.featured li{
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition-duration: 0.5s;
+    transition-timing-function:cubic-bezier(0.075, -0.015, 0.565, 1.055);
+    transition-property: opacity, transform;
+    transition-delay: calc(0.025s * (var(--length) - (var(--index) +1)));
+
+}
+
+.right label {
+    cursor: pointer;
+    color: gray;
+
+}
+
+.right label:hover{
+    color :white;
+}
+
+.right input[type=checkbox]{
+    position: absolute;
+    left: -5000px;
+}
+
+.right input:checked + label{
+    color: rgb(255, 255, 255);
+}
+
+.right input:checked ~ ul li:not(.dont) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: calc(0.055s * var(--index));
+    transition-duration: 0.5s;
+    transition-timing-function:cubic-bezier(0.075, -0.015, 0.565, 1.055);
+    transition-property: opacity, transform;
+}
+
+.slave2{
+    position: relative;
+    width: 100%; 
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:1068px){
+    .post{
+        max-width: 80rem;
+        flex-direction: column;
+    }
+
+    .post-img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem);
+    }
+}
+
+@media screen and (max-width:868px){
+    .post{
+        max-width: 70rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px){
+    .post{
+        max-width: 2.5rem;
+        flex-direction: column;
+    }
+
+    .post-img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem);
+    }
+}
