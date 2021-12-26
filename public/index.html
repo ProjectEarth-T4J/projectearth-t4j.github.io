@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="base.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/2b070e02a1.js" crossorigin="anonymous"></script>
+    
     <title>4조 미니프로젝트 </title>
 </head>
 <body>
     <!-- <header id='header'>
-        <a href="#" class='logo'>안녕하신지</a>
+        <a href="#" class='logo'>4조</a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Content</a></li>
+            <li><a href="#">초반</a></li>
+            <li><a href="#">중후반</a></li>
+            <li><a href="#">음악</a></li>
         </ul>
     </header> -->
 
@@ -33,6 +36,51 @@
 
     </section>
 
+    <div class="music">
+        <div class='music_wrapper'>
+            <div class="top-bar">
+                <i class='material-icons'>expand_more</i>
+                <span>Now playing</span>
+                <i class='material-icons'>more_horiz</i>
+            </div>
+            <div class='img-area'>
+                <img src='' alt="">
+            </div>
+            <div class="song-details">
+                <p class="music_name">interface</p>
+                <p class="artist">Blue_Archive</p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar2"></div>
+                <div class="timer">
+                    <span class="current">0:00</span>
+                    <span class="duration"></span>
+                </div>
+                <audio id="main_audio" src=""></audio>
+            </div>
+            <div class="controls">
+                <i id='repeat-plist' class='material-icons' title="Playlist">repeat</i>
+                <i id='prev' class='material-icons'>skip_previous</i>
+                <div class="play-pause">
+                    <i class='material-icons'>play_arrow</i>
+                </div>
+                <i id='next' class='material-icons'>skip_next</i>
+                <i id='more-music' class='material-icons'>queue_music</i>
+            </div>
+            <div class="music_list">
+                <div class="music_header">
+                    <div class="music_row">
+                        <i class='material-icons'>queue_music</i>
+                        <span>Music list</span>
+                    </div>
+                    <i id='close' class='material-icons'>close</i>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="sec">
 
         <div data-aos="fade-right" data-aos-easing="ease-in-out" style="text-align: center;">
@@ -44,8 +92,8 @@
         <br>
         <p>예전부터 뉴스, 예능에서 자주 언급되었던 지구온난화, 자연재해 등등 가볍게 여겼던 문제들이 최근에는<br></p>
         <p>우리 생활에서 몸으로 느껴질 만큼 너무나도 큰 이슈로 다가오게 되었다.</p>
-        
-        
+
+
         <div class='post'>
             <div class='post-img'>
                 <img src='./images/wildfire.jpg' data-aos="fade-right" class='zoom'>
@@ -67,24 +115,6 @@
         <div class='post'>
             <div class='post-img'>
                 <img src='./images/36.jpg' data-aos="fade-right" class='zoom'>
-            </div>
-            <div class='post__info'>
-                <div class='post__date'>
-                    <span>2021년 여름</span>
-                    <span>미국 콜로라도</span>
-                </div>
-                <h1 class='post_title'>극심한 기온변화</h1>
-                <p class='post_text'>
-                    미국 콜로라도에서 하루에 35도 가량의 기온 변화가 일어남. <br>
-                    한 여름 미국에서 눈이 내리는 기적이 일어나버림
-                </p>
-            </div>
-        </div>
-        <!-- test -->
-        <div class='post'>
-            <div class='post-img'>
-                <iframe src="https://projectearth-t4j.github.io/public/disaster1.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-                
             </div>
             <div class='post__info'>
                 <div class='post__date'>
@@ -163,9 +193,9 @@
 
     <section class='sub_section dark'>
         <div class='content'>
-            <h2>데이터 분석</h2>
+            <h2>재난 데이터</h2>
             <br>
-            <p style="margin-bottom: 100rem;">자료 부분 </p>
+            <p style="margin-bottom: 100rem;">간단한 데이터 분석 </p>
             
         </div>
         <img class="img_sub" src='./images/wildfire.jpg'>
@@ -173,48 +203,121 @@
 
 
     <div class='sec'>
+
         <h2 style="margin-top: 5rem;">
             재난이 실제로 많이 일어났을까?
         </h2>
         <span> 그냥 내 감이 그렇다고 생각하고 있는게 아닐까?</span>
-        
-        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
-            <img class="zoom img_wrap2" src="./images/all_disaster.jpg" >
 
-            <br>
+        <div class='grid_post'>
+            <div class='grid_box grid_span1'>
+                <img class="img_wrap2 zoom" src="./images/all_disaster.jpg" >
+            </div>
+            <div class='grid_box grid_span2' data-aos="flip-up" data-aos-easing="ease-in-out">
+                <h3>2010년 이후로</h3><br>
+                <p>급격하게 숫자가 증가하는 추세를 보여진다.</p>
+                <p>하지만 그렇다고 해도 오히려 2018년 이후로 횟수로는 그렇게 차이가 안난다.</p>
+                <p>줄어드는 경향이 보이는 것 같기도 하다. 그냥 우리가 민감하게 받아들여진걸까?</p>
+            </div>
+            <div class='grid_box grid_span3' data-aos="fade-right">1880~2020 총 발생 횟수 그래프</div>
         </div>
-        <span style="color: rgb(204, 204, 204);">1880~2019년 대규모 자연재해 </span><br>
-        
-        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
-            <img class="zoom img_wrap2" src="./images/flood.jpg" >
-            <br>
-        </div>
-        <span style="color: rgb(204, 204, 204);">1880~2019년 대규모 홍수 </span><br>
-     
-        
-        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
-            <img class="zoom img_wrap2" src="./images/df_wildfire.jpg" >
-            <br>
-        </div>
-        
-        <span style="color: rgb(204, 204, 204);">1880~2019년 대규모 산불 </span><br>
 
-        <h2> 지구 평균온도 변화 </h2>
-        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
-            <img class="zoom img_wrap2" src="./images/mean_temperture.jpg" >
-            <br>
+        <img src="./images/curious.jpg" class='rotate'>
+        <p>어라? 그럼 산불과 홍수 횟수만 늘어났나?</p>
+
+        <div class='grid_post2'>
+            <div class='grid_box2 grid_span4' data-aos="fade-right">
+                <img class="grid_img zoom" src="./images/all_disaster.jpg" >
+            </div>
+            <div class='grid_box2 grid_span4' data-aos="fade-left"></div>
+            <div class='grid_box2 grid_span5'>
+                <img src="./images/curious.jpg" class='rotate'>
+                <p>2000년도 이후로부터 꾸준히 증가는 했지만 2020년이 특히 더 심했다 라고는 보이지 않음.</p>
+
+                <p>대한민국과 미국 두 나라의 데이터를 다시 한번 확인</p>
+            </div>
         </div>
-        <span style="color: rgb(204, 204, 204);"> 평균 온도 오차 </span><br>
-        
-        
-        <h2> 해수면 상승과 홍수로 인해 물에 잠긴 도시 예측 </h2>
-        <div data-aos="flip-up" data-aos-easing="ease-in-out" class="graph">
-            <iframe class="zoom img_wrap2" src="./floodcardview.html"></iframe>
-            <br>
+
+        <h2>한국 2020년까지 산불 현황</h2>
+        <div class="grid_post3" data-aos="fade-left">
+            <div class='grid_box3'>
+                <img class="grid_img zoom" src="./images/all_disaster.jpg">
+                <p class='grid_text'><span style="color: red;">2000년</span> 초반 화재가 눈에 띄게 많이 나는 구간이 있지만 그 이외에는 꾸준히 산불이 올라가는 경향을 보여줬다.
+                    <br> 하지만 <span style="color: red;">2020년</span>은 횟수가 조금 줄어든 모습을 볼 수 있다.
+                    <br> 그래서 산불 피해면적을 확인해보기로 하였다.
+                </p>
+            </div>
         </div>
-        
+
+        <div class="grid_post3" data-aos="fade-left">
+            <div class='grid_box3'>
+                <img class="grid_img zoom" src="./images/all_disaster.jpg">
+                <p class='grid_text'>
+                    피해 면적은 2019년을 기준으로 급격하게 상승했으며
+                    <br>2020년에도 비슷한 수치를 보여주었다.
+                    <br>하지만 대한민국만 이럴지도 모르니 산불로 유명한 미국을 한번 살펴보았다.
+                </p>
+            </div>
+        </div>
+
+        <h2>미국 2020년까지 산불 현황</h2>
+        <div class="grid_post3" data-aos="fade-left">
+            <div class='grid_box4'>
+                <img class="grid_img zoom" src="./images/all_disaster.jpg">
+                <p class='grid_text'>
+                    미국 또한 산불의 횟수는 딱히 크게 차이가 나지 않는다.
+                    <br> 계속해서 산불로 인한 피해 면적을 확인
+                </p>
+            </div>
+        </div>
+
+        <div class="grid_post3" data-aos="fade-left">
+            <div class='grid_box4'>
+                <img class="grid_img zoom" src="./images/all_disaster.jpg">
+                <p class='grid_text'>
+                    하지만 한국과 같이 피해 면적은 나날히 늘어가는 경향임
+                    <br> 대충 몇퍼센트 올라가고 뭐 했다 라는 내용
+                </p>
+            </div>
+        </div>
 
     </div>
+
+    <section class='sub_section dark2'>
+        <div class='content2'>
+            <h2>시뮬레이션</h2>
+            <br>
+            <p style="margin-bottom: 100rem;">파이썬을 이용한 수심 상승에 의한 지도 변화 </p>
+        </div>
+        <img class="img_sub2" src='./images/flood_aust.jpg'>
+    </section>
+
+    <div class='common'>
+        <div class='shape'>
+            <img class='shape1' src="./images/triangle.jpg">
+            <img class='shape2' src="./images/triangle.jpg">
+            <img class='shape3' src="./images/triangle.jpg">
+            <img class='shape4' src="./images/triangle.jpg">
+            <img class='shape5' src="./images/triangle.jpg">
+            <img class='shape6' src="./images/nyancat.jpg">
+        </div>
+        <div class='inner'>
+            <div class='text'>
+                <h5>각 도시의 수면 변화에 따른 모습</h5>
+                <h1>슬라이드</h1>
+                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                </p>
+            </div>
+
+            <div class="common-img">
+                <img class="grid_img zoom" src="./images/curious.jpg">
+            </div>
+
+        </div>
+    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
@@ -237,9 +340,13 @@
         Scrollbar.init(document.querySelector('#my-scrollbar'));
     },{passive:false});
     </script> -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
+    <script src="./music_js.js"></script>
     <script src="./client.js"></script>
-    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+    <script type="text/javascript">
+        window.PlotlyConfig = {MathJaxConfig: 'local'}
+    </script>
 </body>
 
 </html>
