@@ -21,6 +21,9 @@
             <li><a href="#">음악</a></li>
         </ul>
     </header> -->
+    <div class='radius-icon' id="switch" onclick="fadeUp();">
+        <img src="./images/music_logo.jpg" class="music_logo">
+    </div>
 
     <section class='main_section'>
         <h2 id="text"><span>지구 기후 변화</span><br>4조</h2>
@@ -36,10 +39,10 @@
 
     </section>
 
-    <div class="music">
+    <div class="music" id="switch_music">
         <div class='music_wrapper'>
             <div class="top-bar">
-                <i class='material-icons'>expand_more</i>
+                <i class='material-icons' onclick="fadeDown();">expand_more</i>
                 <span>Now playing</span>
                 <i class='material-icons'>more_horiz</i>
             </div>
@@ -57,6 +60,10 @@
                     <span class="duration"></span>
                 </div>
                 <audio id="main_audio" src=""></audio>
+            </div>
+            <div class="volume">
+                <span><i class="material-icons" style="margin-right: 10px;">signal_cellular_alt</i></span>
+                <input class="volume_bar" type="range" min="0" max="100" step="1" oninput="set_vol(this.value)" onchange="set_vol(this.value)"/>
             </div>
             <div class="controls">
                 <i id='repeat-plist' class='material-icons' title="Playlist">repeat</i>
@@ -317,7 +324,6 @@
 
         </div>
     </div>
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>

@@ -285,3 +285,28 @@ function clicked(element) {
     playMusic();
     playingNow();
 }
+
+function fadeUp() {
+    let x = document.getElementById("switch_music");
+    let y = document.getElementById("switch");
+    y.style.opacity = 0;
+    y.style.transitionDuration = "0.5s";
+    x.style.opacity = 1;
+    x.style.transitionDuration = "0.5s";
+    x.style.transform = "translateY(0%)";
+}
+
+function fadeDown() {
+    let x = document.getElementById("switch_music");
+    let y = document.getElementById("switch");
+    y.style.opacity = 1;
+    x.style.opacity = 0;
+    x.style.transform = "translateY(110%)";
+    x.style.transitionDuration = "0.5s";
+}
+
+function set_vol(val) {
+    var player = document.getElementById('main_audio');
+    player.volume = val / 100;
+}
+
