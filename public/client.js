@@ -310,3 +310,15 @@ function set_vol(val) {
     player.volume = val / 100;
 }
 
+// var cssLink = document.createElement("link") 
+// cssLink.href = "./base.css"; 
+// cssLink.rel = "stylesheet"; 
+// cssLink.type = "text/css"; 
+
+// var doc=document.getElementById("iframe1").contentWindow.document;
+
+// doc.open();
+// doc.write(myData);
+// doc.close();
+
+// doc.body.appendChild(cssLink);
