@@ -706,12 +706,14 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 160%;
-    transform: translateY(-110%);
+    bottom: 0;
+    right: 0;
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     opacity: 1;
     flex-direction: column;
+    margin: 3rem;
+    transform: translateY(120%);
 }
 
 
@@ -970,6 +972,59 @@ html{
 .music_list ul .playing{
     color: rgb(238, 147, 238);
     pointer-events: none;
+}
+
+.radius-icon{
+    padding: 2rem 2rem;
+    border-radius: 5rem;
+
+    z-index: 19;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 3rem;
+    cursor: pointer;
+}
+
+.music_logo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.volume{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: right;
+    height: 3px;
+    margin-top: 3rem;
+
+    content: '';
+    background-color: #000;
+    background: inherit;
+}
+
+.volume_bar{
+    -webkit-appearance: none;
+    height: 3px;
+    width: 30%;
+    background: rgb(189, 145, 187);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.volume_bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    background: #4c7b8d;
+    border-radius: 50%;
+}
+
+.volume_bar:hover::-webkit-slider-thumb{
+    background: #0f0a25;
 }
 
 @keyframes shape6{
