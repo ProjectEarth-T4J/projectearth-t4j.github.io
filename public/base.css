@@ -21,7 +21,7 @@ body{
     background: #fff;
     min-height: 100vh;
     overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 #header{
@@ -434,9 +434,10 @@ html{
 .grid_box{
     width: 100%;
     padding: 3rem;
-    display: flex;
-    background-color: rgb(219, 231, 250);
-    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.5);
+    display: grid;
+    /* background-color: rgb(219, 231, 250); */
+    /* box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.5); */
+    grid-template-columns: repeat(2,1fr);
     border-radius: .8rem;
     position: relative;
 }
@@ -466,18 +467,18 @@ html{
 }
 
 .grid_span2{
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: span 2;
-    background: #5a3d3d;
+    grid-column-start: 2;
     display: flex;
     flex-direction: column;
 }
 
 .grid_span3{
-    grid-column: span 2;
     color:rgba(0, 0, 0, .7);
-    font-size: 2rem;
+    font-size: 1rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 3rem;
+    color: whitesmoke;
 }
 
 .rotate{
@@ -517,6 +518,7 @@ html{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .grid_span5{
@@ -654,6 +656,7 @@ html{
     font-size: 18px;
     margin: 30px 0 60px;
     line-height: 30px;
+    text-align: left;
     color: rgb(211, 211, 211);
 }
 
@@ -1131,4 +1134,8 @@ html{
     font-size: 17px;
     color: #eaf1f7;
     text-align: left;
+}
+
+.zoom{
+    z-index: 2;
 }

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="base.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
     <script src="https://kit.fontawesome.com/2b070e02a1.js" crossorigin="anonymous"></script>
     
     <title>4조 미니프로젝트 </title>
@@ -47,7 +47,7 @@
                 <i class='material-icons'>more_horiz</i>
             </div>
             <div class='img-area'>
-                <img src='' alt="">
+                <img src='' alt="" loading="lazy">
             </div>
             <div class="song-details">
                 <p class="music_name">interface</p>
@@ -100,6 +100,36 @@
         <p>예전부터 뉴스, 예능에서 자주 언급되었던 지구온난화, 자연재해 등등 가볍게 여겼던 문제들이 최근에는<br></p>
         <p>우리 생활에서 몸으로 느껴질 만큼 너무나도 큰 이슈로 다가오게 되었다.</p>
 
+        <div class="grid_box">
+            <div class="grid_span2">
+                <img src="./images/earth.jpg" class="grid_img">
+            </div>
+            <div class="grid_span3">
+                <p style="font-size: 1.2rem; color: bisque;">평균온도가 1.5도 상승시 홍수 위험이 100%로 증가하고, 2도 상승시 170% 증가</p>
+                <br>
+                <p>지구의 온도 상승은 사람 뿐만 아니라, 동물과 식물 그리고 곤충 등의 생물에게도 영향을 끼치며 과학 저널 science 에 실린 논문은 바다에서의 생물종 멸종 사태가 일어날 수 있음을 경고하였다. <br>
+                    지구 온난화의 영향으로 산호초 지역이 40% 가까이 줄어드는 등 여러 동식물의 서식지가 파괴되고 있다. <br>
+                    100만종년당 멸종수(extinctions per million species-years·E/MSY)인 멸종률이 100~1000E/MSY(100만종 가운데 매년 100~1000종이 멸종)로 나타나, <br>멸종이 자연적 수준보다 최대 1000배 빠르게 진행.</p>
+                <br>
+                <p style="font-size: 1.2rem; color: bisque;">
+                    태풍이나 한파 만큼 폭염 역시 재난 위험을 증가 시키며 열로 인해 가뭄이 더 심해졌고, 산불이 일어나기 쉬운 환경이 조성되었다. </p>
+                <br>
+                <p>
+                    고기압의 정체로 인해 뜨거운 공기가 한 지역에 갇히는 열돔 현상이 일어나기도 하고, 
+                    빌딩, 도로, 산업 기반 시설들은 열을 흡수 해서 도심지역이 교외 지역 보다 최대 7도 이상 더 더워지게 되기도 함.<br> 
+                </p>
+                <br>
+                <p style="font-size: 1.2rem; color: bisque;"> 
+                    자원의 고갈과 국가 경제 위협
+                </p>
+                <p>
+                    기후변화로 생태계가 변화하면서 인간의 자원이용 가능성도 역시 영향을 받게 되어, 생태계 안전망이자 진화의 핵심요소가 되는 생물종 다양성이 감소되고, 사막화로 인해 식용가능한 수자원이 고갈 되고 있다. 앞에서 살펴본 것처럼 농수산물의 생육이 제한 되므로
+                    국가 경제에도 타격을 준다. 유엔 '기후변화에 관한 정부 간 협의체'(IPCC)가 작성한 보고서 에 따르면 만약 지구의 온도가 산업화 이전 시대보다 4도 상승한다면 세계 GDP는 10~23% 줄어들 수 있다고 발표하였다. 
+
+                    우리나라의 경우 세계 평균 기온 2도가 오르면 국내 GDP 8.5%가 줄어들게 되고. 2021년 현재 기준으로 무려 184조3000억원에 달하는 금액이 증발 하게 된다.
+                </p>
+            </div>
+        </div>
 
         <div class='post'>
             <div class='post-img'>
@@ -148,7 +178,7 @@
                 <h1 class='post_title'>열돔 현상</h1>
                 <p class='post_text'>
                     2021년 미국, 캐나다 서부 지역에서 일어난 폭염 사태 <br>
-                    미국 캘리포니아 데스밸리가 54도 까지 치솟고 근처 지역에서는 섭씨 40~50도에 달하는 폭염과 가뭄이 있었음
+                    미국 캘리포니아 데스밸리가 54도 까지 치솟고 근처 지역에서는 섭씨 40~50도에 달하는 폭염과 가뭄이 있었다.
                     캐나다에서 폭염으로 719명이 사망 , 미국에서는 약 150명이 사망했다.
                 </p>
             </div>
@@ -210,7 +240,7 @@
 
 
     <div class='sec'>
-
+        
         <h2 style="margin-top: 5rem;">
             1. 기온 데이터
         </h2>
@@ -221,9 +251,10 @@
             </div>
         </div>
 
-        <iframe data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/1_worldTemperatureChange.html" width="950px" height="100%"></iframe>
+        <iframe data-aos="fade-up" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/1_worldTemperatureChange.html" width="950px" height="100%" loading="lazy"></iframe>
+
         <div class="text-box">
-            <p> 텍스트 입력란 </p>
+            <p> 전세계 각국 매월 평균 온도 변화를 측정한 데이터. 1960년 부터 지금까지 지속적으로 지구 온도가 높아짐. </p>
         </div>
 
         <div class="grid_post">
@@ -232,9 +263,9 @@
             </div>
         </div>
 
-        <iframe data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/2_TemperatureChangeHighTop10.html" width="950px" height="100%"></iframe>
+        <iframe loading="lazy" data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/2_TemperatureChangeHighTop10.html" width="950px" height="100%"></iframe>
         <div class="text-box">
-            <p> 텍스트 입력란 </p>
+            <p> 북극해에 위치한 스발바르 얀마옌 제도가 가장 많은 영향을 받았다. </p>
         </div>
 
         <div class="grid_post">
@@ -243,20 +274,22 @@
             </div>
         </div>
 
-        <iframe data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/3_TemperatureChangeLowTop10.html" width="950px" height="100%"></iframe>
+        <iframe loading="lazy" data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/3_TemperatureChangeLowTop10.html" width="950px" height="100%"></iframe>
         <div class="text-box">
-            <p> 텍스트 입력란 </p>
+            <p> 대서양 남쪽에 위치한 사우스조지아 사우스샌드위치 ㅋㅋ 이름이어떻게 샌드위치 ㅋㅋㅋ 제도가 가장 적은 영향을 받았다. </p>
         </div>
 
         <div class="grid_post">
             <div class="grid_span6">
-                <span>1 - 4 ??????????</span>
+                <span>1 - 4 앞으로의 기온 변화 예측 </span>
             </div>
         </div>
 
         <img src="./analysis/4_Average_Temperature_Change_of_the_World.jpg" class="grid_span1"></img>
         <div class="text-box">
-            <p> 텍스트 입력란 </p>
+            <p> 1961년부터 2019년까지의 기온 변화 데이터를 토대로 회귀분석을 하여 앞으로의 기온이 어떻게 변할지 예측. 
+
+                <br>선형 회귀분석과 함께 조금 더 정확한 예측을 위해  다항 회귀분석을 시도해보았다.  </p>
         </div>
 
         <div class="grid_post">
@@ -265,10 +298,10 @@
             </div>
         </div>
 
-        <iframe data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/5_TemperatureChangeMap.html" width="950px" height="100%"></iframe>
-        <div class="text-box">
+        <iframe loading="lazy" data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/5_TemperatureChangeMap.html" width="950px" height="100%"></iframe>
+        <!-- <div class="text-box">
             <p> 텍스트 입력란 </p>
-        </div>
+        </div> -->
 
         <div class="grid_post">
             <div class="grid_span6">
@@ -276,26 +309,47 @@
             </div>
         </div>
         
-        <iframe data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/6_TemperatureChangeBySeason.html" width="950px" height="100%"></iframe>
-        <div class="text-box">
+        <iframe loading="lazy" data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/6_TemperatureChangeBySeason.html" width="950px" height="100%"></iframe>
+        <!-- <div class="text-box">
             <p> 텍스트 입력란 </p>
+        </div> -->
+
+        <div class="grid_post">
+            <div class="grid_span6">
+                <span>해수면 상승도</span>
+            </div>
+        </div>
+
+        <img src="./images/sea_level (2).jpg" class="grid_span1">
+        <div class="text-box">
+            <p> 조금씩 조금씩 계속해서 올라가는 모습 </p>
         </div>
 
         <h2 style="margin-top: 5rem;">
             2. 재난 데이터
         </h2>
 
+        <div class="grid_post">
+            <div class="grid_span6">
+                <span>2-1 총 재난 데이터</span>
+            </div>
+        </div>
+        
+        <iframe loading="lazy" data-aos="fade-up" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/disaster1.html" width="950px" height="100%"></iframe>
+        <div class="text-box">
+            <p> 발생 횟수만 따져보면 2000년 후반 까지는 늘었지만 이후로는 오히려 줄어드는 모습 </p>
+        </div>
 
         <div class="grid_post">
             <div class="grid_span6">
-                <span>2-? 한국 산불</span>
+                <span>2-1 한국 산불</span>
             </div>
         </div>
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box3'>
-                <iframe data-aos="fade-left" name='iframe1' id="iframe1" class="grid_img" src="./analysis/1_worldTemperatureChange.html" width="950px" height="100%"></iframe>
+                <img class="grid_img zoom" src="./images/nums_kor_wildfire.jpg">
                 <p class='grid_text'><span style="color: red;">2000년</span> 초반 화재가 눈에 띄게 많이 나는 구간이 있지만 그 이외에는 꾸준히 산불이 올라가는 경향을 보여줬다.
-                    <br> 하지만 <span style="color: red;">2020년</span>은 횟수가 조금 줄어든 모습을 볼 수 있다.
+                    <br> 하지만 <span style="color: red;">2017년</span>이후는 횟수가 조금 줄어든 모습을 볼 수 있다.
                     <br> 그래서 산불 피해면적을 확인해보기로 하였다.
                 </p>
             </div>
@@ -303,36 +357,37 @@
 
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box3'>
-                <img class="grid_img zoom" src="./images/all_disaster.jpg">
+                <img class="grid_img zoom" src="./images/area_kor_wildfire.jpg">
                 <p class='grid_text'>
                     피해 면적은 2019년을 기준으로 급격하게 상승했으며
-                    <br>2020년에도 비슷한 수치를 보여주었다.
-                    <br>하지만 대한민국만 이럴지도 모르니 산불로 유명한 미국을 한번 살펴보았다.
+                    <br>2018년보다 약 3배 높은 모습
+                    <br>건수가 아닌 피해 규모가 늘었다는걸 알 수 있다.
                 </p>
             </div>
         </div>
 
         <div class="grid_post">
             <div class="grid_span6">
-                <span>2-? 미국 산불</span>
+                <span>2-2 미국 산불</span>
             </div>
         </div>
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box4'>
-                <img class="grid_img zoom" src="./images/all_disaster.jpg">
+                <img class="grid_img zoom" src="./images/nums_usa_wildfire.jpg">
                 <p class='grid_text'>
-                    미국 또한 산불의 횟수는 딱히 크게 차이가 나지 않는다.
-                    <br> 계속해서 산불로 인한 피해 면적을 확인
+                    물론 1985년 이후로 급등하긴 했지만 
+                    <br>미국의 산불은 오히려 줄어드는 모습을 볼 수 있다.
+                    <br> 2020년 은 2006년에 비해 건수는 30%이상 줄어든 모습이다.
                 </p>
             </div>
         </div>
 
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box4'>
-                <img class="grid_img zoom" src="./images/all_disaster.jpg">
+                <img class="grid_img zoom" src="./images/area_wildfire_usa.jpg">
                 <p class='grid_text'>
                     하지만 한국과 같이 피해 면적은 나날히 늘어가는 경향임
-                    <br> 대충 몇퍼센트 올라가고 뭐 했다 라는 내용
+                    <br> 조금 편차가 있기는 하지만 일단 우상향하는 모습을 보여줌.
                 </p>
             </div>
         </div>
@@ -348,7 +403,8 @@
     </section>
 
     <div class='common'>
-        <div class='shape'>
+
+        <div class="shape">
             <img class='shape1' src="./images/triangle.jpg">
             <img class='shape2' src="./images/triangle.jpg">
             <img class='shape3' src="./images/triangle.jpg">
@@ -356,102 +412,126 @@
             <img class='shape5' src="./images/triangle.jpg">
             <img class='shape6' src="./images/nyancat.jpg">
         </div>
-        <div class='inner'>
-            <div class='text'>
-                <h5>Co2</h5>
-                <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                </p>
-            </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/11_co2_world_emission.html" width="950px" height="100%"></iframe>
-        </div>
 
         <div class='inner'>
             <div class='text'>
                 <h5>Co2</h5>
                 <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                <p>1960년 부터 2019년 까지 대륙 별 국가들의 탄소 배출량의 모습.
                 </p>
             </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/12_co2_IQRchangeByYear.html" width="950px" height="100%"></iframe>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/11_co2_world_emission.html" width="100%" height="100%"></iframe>
         </div>
 
         <div class='inner'>
             <div class='text'>
                 <h5>Co2</h5>
-                <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                <h1>대륙 별 배출량</h1>
+                <p>
+                    현대에 들어서면서 산업혁명을 이끌었던 유럽을 제치고 아시아 대륙에서의 배출량이 점점 높아지고있다.
                 </p>
             </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/12_co2_IQRchangeByYear.html" width="950px" height="100%"></iframe>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/12_co2_IQRchangeByYear.html" width="100%" height="100%"></iframe>
         </div>
 
         <div class='inner'>
             <div class='text'>
                 <h5>Co2</h5>
-                <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                <h1>Asia 대륙 국가 들의 1인당 탄소 배출량</h1>
+                <p>주요 화석연료 수출국인 카타르가 압도적 1위를 계속 유지하고있다.
                 </p>
             </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/13_co2_Asia.html" width="950px" height="100%"></iframe>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/13_co2_Asia.html" width="100%" height="100%"></iframe>
         </div>
 
         <div class='inner'>
             <div class='text'>
                 <h5>Co2</h5>
-                <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                <h1>Africa 대륙 국가 들의 1인당 탄소 배출량 </h1>
+                <p>
                 </p>
             </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/14_co2_Africa.html" width="950px" height="100%"></iframe>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/14_co2_Africa.html" width="100%" height="100%"></iframe>
         </div>
 
         <div class='inner'>
             <div class='text'>
                 <h5>Co2</h5>
-                <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                <h1>Europe 대륙 국가 들의 1인당 탄소 배출량 </h1>
+                <p>
                 </p>
             </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/16_co2_North America.html" width="950px" height="100%"></iframe>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/15_co2_Europe.html" width="100%" height="100%"></iframe>
         </div>
 
         <div class='inner'>
             <div class='text'>
                 <h5>Co2</h5>
-                <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                <h1>North America 대륙 국가 들의 1인당 탄소 배출량 </h1>
+                <p>
                 </p>
             </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/17_co2_South America.html" width="950px" height="100%"></iframe>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/16_co2_North America.html" width="100%" height="100%"></iframe>
         </div>
 
         <div class='inner'>
             <div class='text'>
                 <h5>Co2</h5>
-                <h1>총량</h1>
-                <p>대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
-                    대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 대충 긴 글 
+                <h1>South America  대륙 국가 들의 1인당 탄소 배출량  </h1>
+                <p>
                 </p>
             </div>
-            <iframe data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="./analysis/18_co2_Oceania.html" width="950px" height="100%"></iframe>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/17_co2_South America.html" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Co2</h5>
+                <h1>Oceania 대륙 국가 들의 1인당 탄소 배출량</h1>
+                <p>
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/18_co2_Oceania.html" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Co2</h5>
+                <h1>국가별 배출량 추이 </h1>
+                <p>
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/19_co2_top10.html" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Co2</h5>
+                <h1> 탄소 배출량과 국가 소득간 관계  </h1>
+                <p>
+                    world bank에서 각국의 gdp 에 따라 소득 그룹을 나눠 놓은 데이터를 활용하여 탄소 배출량과 소득간의 관계를 분석 <br>
+                    국가 소득이 높은 국가들의 탄소 배출량이 소득이 적은 국가보다 월등히 높은 것을 볼 수 있으며, <br>
+                    각 소득 그룹별 탄소 배출량의 모습이 유사한 것을 확인 <br>
+                    소득이 높은 그룹이 여전히 압도적인 배출을 하고 있지만, 현재 줄어드는 추세인 반면, <br>
+                    중위 소득 이하의 그룹은 1970년대 말 오일쇼크 이후 1980년대 초 세계를 강타한 불황기에 경제활동 위축으로 이산화탄소 배출량이 10억톤 가량 줄었던 시기 이후 <br>
+                    점진적으로 계속 배출량이 상승하고 있습니다. <br>
+                    탄소 배출량이 작은 하위 소득 그룹은 기온 변화로 인해 하위 그룹의 gdp 타격이 큼 <br>
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/20_co2_incomeGroup.html" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Co2</h5>
+                <h1> 전 세계 발전소 </h1>
+                <p>
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/21_co2_['East Asia & Pacific (excluding high income)', 'East Asia & Pacific', 'World']_incomeGroup.html" width="100%" height="100%"></iframe>
         </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
@@ -474,7 +554,7 @@
         Scrollbar.init(document.querySelector('#my-scrollbar'));
     },{passive:false});
     </script> -->
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
     <script src="./music_js.js"></script>
     <script src="./client.js"></script>
