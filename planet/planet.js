@@ -112,7 +112,7 @@ const render = () => {
 animate();
 
 document.querySelector(".learn").addEventListener("click", () => {
-   window.location.href = "../public/index.html";
+   window.location.href = "https://projectearth-t4j.github.io/public/index.html";
 });
 
 document.querySelector(".contact").addEventListener("click", () => {
