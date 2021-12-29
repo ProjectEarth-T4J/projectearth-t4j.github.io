@@ -112,7 +112,7 @@ const render = () => {
 animate();
 
 document.querySelector(".learn").addEventListener("click", () => {
-   window.location.href = "http://127.0.0.1:8080/public/index.html";
+   window.location.href = "../public/index.html";
 });
 
 document.querySelector(".contact").addEventListener("click", () => {
