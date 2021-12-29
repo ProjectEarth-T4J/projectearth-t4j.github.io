@@ -31,7 +31,7 @@ StarWars = (function() {
     let starwarsAnimationEndCount=0;
     $(this.starwarsAnimation).bind('animationend', $.proxy(function() {
       if (starwarsAnimationEndCount == 2) {
-        window.location.href = "../../planet/index.html";
+        window.location.href = "https://projectearth-t4j.github.io/planet/index.html";
       }
       starwarsAnimationEndCount++;
     }, this));
