@@ -46,7 +46,6 @@ function getAnimation(dataLength) {
           return 0;
         }
         ctx.xStarted = true;
-        if (ctx.index === 1) return 10000;
         return ctx.index * delayBetweenPoints;
       },
     },
