@@ -47,7 +47,7 @@
                 <i class='material-icons'>more_horiz</i>
             </div>
             <div class='img-area'>
-                <img src='' alt="" loading="lazy">
+                <img src='' alt="" >
             </div>
             <div class="song-details">
                 <p class="music_name">interface</p>
@@ -91,7 +91,7 @@
     <div class="sec">
 
         <div data-aos="fade-right" data-aos-easing="ease-in-out" style="text-align: center;">
-            <img class="img_wrap zoom" src="./images/butterflyeffect.jpg">
+            <img class="img_wrap zoom" data-src="./images/butterflyeffect.jpg">
         </div>
         <h3 data-aos="fade-right" data-aos-easing="ease-in-out"> 다들 한번쯤은 봤을 무한도전 나비효과 편</h3>
         <br>
@@ -102,7 +102,7 @@
 
         <div class="grid_box">
             <div class="grid_span2">
-                <img src="./images/earth.jpg" class="grid_img">
+                <img data-src="./images/earth.jpg" class="grid_img">
             </div>
             <div class="grid_span3">
                 <p style="font-size: 1.2rem; color: bisque;">평균온도가 1.5도 상승시 홍수 위험이 100%로 증가하고, 2도 상승시 170% 증가</p>
@@ -133,7 +133,7 @@
 
         <div class='post'>
             <div class='post-img'>
-                <img src='./images/wildfire.jpg' data-aos="fade-right" class='zoom'>
+                <img data-src='./images/wildfire.jpg' data-aos="fade-right" class='zoom'>
             </div>
             <div class='post__info'>
                 <div class='post__date'>
@@ -151,7 +151,7 @@
 
         <div class='post'>
             <div class='post-img'>
-                <img src='./images/36.jpg' data-aos="fade-right" class='zoom'>
+                <img data-src='./images/36.jpg' data-aos="fade-right" class='zoom'>
             </div>
             <div class='post__info'>
                 <div class='post__date'>
@@ -168,7 +168,7 @@
 
         <div class='post'>
             <div class='post-img'>
-                <img src='./images/america.jpg' data-aos="fade-right" class='zoom'>
+                <img data-src='./images/america.jpg' data-aos="fade-right" class='zoom'>
             </div>
             <div class='post__info'>
                 <div class='post__date'>
@@ -186,7 +186,7 @@
 
         <div class='post'>
             <div class='post-img'>
-                <img src='./images/turkey.jpg' data-aos="fade-right" class='zoom'>
+                <img data-src='./images/turkey.jpg' data-aos="fade-right" class='zoom'>
             </div>
             <div class='post__info'>
                 <div class='post__date'>
@@ -209,19 +209,19 @@
 
             <ul class="featured" style="--length: 5">
                 <li style="--index: 0">
-                    <img src="./images/C.jpg" class="slave2 zoom">
+                    <img data-src="./images/C.jpg" class="slave2 zoom">
                 </li>
                 <li style="--index: 1">
-                    <img src="./images/China.jpg" class="slave2 zoom">
+                    <img data-src="./images/China.jpg" class="slave2 zoom">
                 </li>
                 <li style="--index: 2">
-                    <img src="./images/Greece.jpg" class="slave2 zoom">
+                    <img data-src="./images/Greece.jpg" class="slave2 zoom">
                 </li>
                 <li style="--index: 3">
-                    <img src="./images/Greece_flood.jpg" class="slave2 zoom">
+                    <img data-src="./images/Greece_flood.jpg" class="slave2 zoom">
                 </li>
                 <li style="--index: 4">
-                    <img src="./images/tornado.jpg" class="slave2 zoom">
+                    <img data-src="./images/tornado.jpg" class="slave2 zoom">
                 </li>
             </ul>
         </div>
@@ -235,7 +235,7 @@
             <p style="margin-bottom: 100rem;">간단한 데이터 분석 </p>
             
         </div>
-        <img class="img_sub" src='./images/wildfire.jpg'>
+        <img class="img_sub" data-src='./images/wildfire.jpg'>
     </section>
 
 
@@ -285,7 +285,7 @@
             </div>
         </div>
 
-        <img src="./analysis/4_Average_Temperature_Change_of_the_World.jpg" class="grid_span1"></img>
+        <img data-src="./analysis/4_Average_Temperature_Change_of_the_World.jpg" class="grid_span1"></img>
         <div class="text-box">
             <p> 1961년부터 2019년까지의 기온 변화 데이터를 토대로 회귀분석을 하여 앞으로의 기온이 어떻게 변할지 예측. 
 
@@ -320,10 +320,37 @@
             </div>
         </div>
 
-        <img src="./images/sea_level (2).jpg" class="grid_span1">
+        <img data-src="./images/sea_level (2).jpg" class="grid_span1">
         <div class="text-box">
             <p> 조금씩 조금씩 계속해서 올라가는 모습 </p>
         </div>
+
+        <div class="grid_post">
+            <div class="grid_span6">
+                <span> 해수면 상승 시뮬레이션</span>
+            </div>
+        </div>
+
+        <div class="grid_post4">
+            <img  data-aos="fade-left" class="grid_img3" data-src="./images/sea_level_NewYork.gif">
+            <p class="grid_text">해수면 상승시 뉴욕이 잠기는 모습 시뮬레이션</p>
+        </div>
+
+        <div class="grid_post4">
+            <p class="grid_text">해수면 상승시 서울이 잠기는 모습 시뮬레이션</p>
+            <img data-aos="fade-right" class="grid_img3" data-src="./images/sea_level_Seoul.gif">
+        </div>
+
+        <div class="grid_post4">
+            <img  data-aos="fade-left" class="grid_img3" data-src="./images/sea_level_Busan.gif">
+            <p class="grid_text">해수면 상승시 부산이 잠기는 모습 시뮬레이션</p>
+        </div>
+
+        <div class="grid_post4">
+            <p class="grid_text">해수면 상승시 도쿄이 잠기는 모습 시뮬레이션</p>
+            <img data-aos="fade-right" class="grid_img3" data-src="./images/sea_level_Tokyo.gif">
+        </div>
+
 
         <h2 style="margin-top: 5rem;">
             2. 재난 데이터
@@ -347,7 +374,7 @@
         </div>
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box3'>
-                <img class="grid_img zoom" src="./images/nums_kor_wildfire.jpg">
+                <img class="grid_img zoom" data-src="./images/nums_kor_wildfire.jpg">
                 <p class='grid_text'><span style="color: red;">2000년</span> 초반 화재가 눈에 띄게 많이 나는 구간이 있지만 그 이외에는 꾸준히 산불이 올라가는 경향을 보여줬다.
                     <br> 하지만 <span style="color: red;">2017년</span>이후는 횟수가 조금 줄어든 모습을 볼 수 있다.
                     <br> 그래서 산불 피해면적을 확인해보기로 하였다.
@@ -357,7 +384,7 @@
 
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box3'>
-                <img class="grid_img zoom" src="./images/area_kor_wildfire.jpg">
+                <img class="grid_img zoom" data-src="./images/area_kor_wildfire.jpg">
                 <p class='grid_text'>
                     피해 면적은 2019년을 기준으로 급격하게 상승했으며
                     <br>2018년보다 약 3배 높은 모습
@@ -373,7 +400,7 @@
         </div>
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box4'>
-                <img class="grid_img zoom" src="./images/nums_usa_wildfire.jpg">
+                <img class="grid_img zoom" data-src="./images/nums_usa_wildfire.jpg">
                 <p class='grid_text'>
                     물론 1985년 이후로 급등하긴 했지만 
                     <br>미국의 산불은 오히려 줄어드는 모습을 볼 수 있다.
@@ -384,7 +411,7 @@
 
         <div class="grid_post3" data-aos="fade-left">
             <div class='grid_box4'>
-                <img class="grid_img zoom" src="./images/area_wildfire_usa.jpg">
+                <img class="grid_img zoom" data-src="./images/area_wildfire_usa.jpg">
                 <p class='grid_text'>
                     하지만 한국과 같이 피해 면적은 나날히 늘어가는 경향임
                     <br> 조금 편차가 있기는 하지만 일단 우상향하는 모습을 보여줌.
@@ -397,9 +424,9 @@
         <div class='content2'>
             <h2>데이터 분석_2</h2>
             <br>
-            <p style="margin-bottom: 100rem;">Co2, 시뮬레이션</p>
+            <p style="margin-bottom: 100rem;">Co2, Power_Plant</p>
         </div>
-        <img class="img_sub2" src='./images/flood_aust.jpg'>
+        <img class="img_sub2" data-src='./images/flood_aust.jpg'>
     </section>
 
     <div class='common'>
@@ -411,6 +438,43 @@
             <img class='shape4' src="./images/triangle.jpg">
             <img class='shape5' src="./images/triangle.jpg">
             <img class='shape6' src="./images/nyancat.jpg">
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Power Plant</h5>
+                <h1> 전 세계 발전소 </h1>
+                <p>
+
+                </p>
+            </div>
+            <a href="./power_plant.html" target='_blank' ><img data-src="./images/power_plant_earth.jpg" class="grid_img"></a>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Power Plant</h5>
+                <h1>발전소 비율</h1>
+                <p>
+                    전 세계적으로 태양열이 약 50%이상이 친환경 에너지를 사용하고있다.
+                    <br>
+                    하지만 대한한국은 약 38%가 석탄과 가스를 사용하고있다. 
+                        
+                </p>
+            </div>
+            <div class="grid_post3" data-aos="fade-left">
+                <div class='grid_box3'>
+                    <img class="grid_img zoom" data-src="./images/newplot (13).jpg">
+                    <img class="grid_img zoom" data-src="./images/newplot (14).jpg">
+                </div>
+            </div>
+
+            <div class="grid_post3" data-aos="fade-left">
+                <div class='grid_box3'>
+                    <img class="grid_img2 zoom" data-src="./images/newplot (12).jpg" style="height: 600px;">
+                    
+                </div>
+            </div>
         </div>
 
         <div class='inner'>
@@ -523,13 +587,60 @@
 
         <div class='inner'>
             <div class='text'>
-                <h5>Co2</h5>
-                <h1> 전 세계 발전소 </h1>
+                <h5>Power Plant</h5>
+                <h1>GDP별 비교 (동아시아 & 태평양) </h1>
                 <p>
+
                 </p>
             </div>
             <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/21_co2_['East Asia & Pacific (excluding high income)', 'East Asia & Pacific', 'World']_incomeGroup.html" width="100%" height="100%"></iframe>
         </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Power Plant</h5>
+                <h1>GDP별 비교 (중앙아시아 & 유럽) </h1>
+                <p>
+
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/22_co2_['Europe & Central Asia (excluding high income)', 'Europe & Central Asia', 'World']_incomeGroup.html" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Power Plant</h5>
+                <h1>GDP별 비교 (라틴 아메리카 & 카리브해) </h1>
+                <p>
+
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/23_co2_['Latin America & Caribbean (excluding high income)', 'Latin America & Caribbean', 'World']_incomeGroup.html" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Power Plant</h5>
+                <h1>GDP별 비교 (중동 & 북아프리카) </h1>
+                <p>
+
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/24_co2_['Middle East & North Africa', 'Middle East & North Africa (excluding high income)', 'World']_incomeGroup.html" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class='inner'>
+            <div class='text'>
+                <h5>Power Plant</h5>
+                <h1>GDP별 비교 사하라 </h1>
+                <p>
+
+                </p>
+            </div>
+            <iframe loading="lazy" data-aos="zoom-in-down" name='iframe1' id="iframe1" class="grid_span1" src="https://projectearth-t4j.github.io/public/analysis/25_co2_['Sub-Saharan Africa (excluding high income)', 'Sub-Saharan Africa', 'World']_incomeGroup.html" width="100%" height="100%"></iframe>
+        </div>
+
+
     </div>
 
 
