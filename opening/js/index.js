@@ -30,11 +30,11 @@ StarWars = (function() {
     
     let starwarsAnimationEndCount=0;
     $(this.starwarsAnimation).bind('animationend', $.proxy(function() {
-      if (starwarsAnimationEndCount == 2) window.location.href = "";
-      console.log(starwarsAnimationEndCount);
+      if (starwarsAnimationEndCount == 2) {
+        window.location.href = "../../planet/index.html";
+      }
       starwarsAnimationEndCount++;
     }, this));
-    
 
   }
   

@@ -135,7 +135,7 @@ body{
 .sec{
     position: relative;
     padding: 100px;
-    background: #094b65;
+    background: linear-gradient(#094b65, #003C5F, #094b65);
     color: white;
     align-items: center;
     display: flex;

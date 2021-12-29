@@ -1,5 +1,11 @@
 let allMusic = [
     {
+        name: "Imperial March",
+        artist: "John Williams",
+        img: "./images/vader.gif",
+        src: "imperial",
+    },
+    {
         name: "Interface",
         artist: "Blue Archive",
         img: "./images/mutsuki.gif",
