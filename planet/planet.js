@@ -120,11 +120,12 @@ document.querySelector(".contact").addEventListener("click", () => {
 });
 
 let isPlaying = false;
+const audio = new Audio("music/sw.mp3");
+audio.loop = true;
 document.querySelector("body").addEventListener("click", async () => {
     if (!isPlaying) {
-        const audio = new Audio("music/sw.mp3");
-        audio.loop = true;
-        await audio.play();
         isPlaying = true;
+        audio.pause();
+        await audio.play();
     }
 })
