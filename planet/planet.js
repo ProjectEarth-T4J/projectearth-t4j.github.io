@@ -8,11 +8,11 @@ const far = 1000;
 
 const RADIUS = 1.1;
 const CLOUDRADIUS = RADIUS * 1.01;
-const MOONRADIUS = RADIUS * 0.27;
+const MOONRADIUS = RADIUS * 0.15;
 //const MOONDIST = RADIUS * 60.43;
-const MOONDIST = RADIUS * 2;
+const MOONDIST = RADIUS * 1.5;
 //const SUNDIST = RADIUS * 23090.56;
-const SUNDIST = RADIUS * 3.5;
+const SUNDIST = RADIUS * 3.2;
 const STARDIST = SUNDIST * 100;
 
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
@@ -84,12 +84,12 @@ const earthMaterial = new THREE.MeshStandardMaterial({
 const moonMaterial = new THREE.MeshStandardMaterial({
     map: moonMapTexture,
     bumpMap: moonBumpTexture,
-    bumpScale: 0.001,
+    bumpScale: 0.005,
 });
 
 const cloudGeometry = new THREE.SphereGeometry(CLOUDRADIUS, 32, 32);
 
-const cloudMaterial = new THREE.MeshStandardMaterial({
+const cloudMaterial = new THREE.MeshPhongMaterial({
     alphaMap: cloudTexture,
     transparent: true,
     opacity: 0.5,
@@ -139,7 +139,7 @@ time = 0;
 const animate = () => {
     requestAnimationFrame(animate);
     earthMesh.rotation.y -= 0.0015;
-    moonMesh.rotation.y += 0.0015;
+    moonMesh.rotation.y += 0.01;
     moonMesh.position.x = -MOONDIST * Math.cos(time/4 * (Math.PI/180));
     moonMesh.position.z = -MOONDIST * Math.sin(time/4 * (Math.PI/180));
     cloudMesh.rotation.x += 0.0015;
