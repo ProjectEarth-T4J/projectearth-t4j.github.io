@@ -72,7 +72,7 @@ const starTexture = new THREE.TextureLoader().load('texture/galaxy.png');
 starTexture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 starTexture.minFilter = THREE.LinearFilter;
 
-const earthMaterial = new THREE.MeshPhongMaterial({
+const earthMaterial = new THREE.MeshStandardMaterial({
     map: earthMapTexture,
     emissive: "#cbc99a",
     emissiveMap: earthNightTexture,
@@ -81,7 +81,7 @@ const earthMaterial = new THREE.MeshPhongMaterial({
     bumpScale: 0.05,
 });
 
-const moonMaterial = new THREE.MeshPhongMaterial({
+const moonMaterial = new THREE.MeshStandardMaterial({
     map: moonMapTexture,
     bumpMap: moonBumpTexture,
     bumpScale: 0.001,
@@ -89,7 +89,7 @@ const moonMaterial = new THREE.MeshPhongMaterial({
 
 const cloudGeometry = new THREE.SphereGeometry(CLOUDRADIUS, 32, 32);
 
-const cloudMaterial = new THREE.MeshPhongMaterial({
+const cloudMaterial = new THREE.MeshStandardMaterial({
     alphaMap: cloudTexture,
     transparent: true,
     opacity: 0.5,
@@ -140,14 +140,14 @@ const animate = () => {
     requestAnimationFrame(animate);
     earthMesh.rotation.y -= 0.0015;
     moonMesh.rotation.y += 0.0015;
-    moonMesh.position.x = -MOONDIST * Math.cos(time/6 * (Math.PI/180));
-    moonMesh.position.z = -MOONDIST * Math.sin(time/6 * (Math.PI/180));
+    moonMesh.position.x = -MOONDIST * Math.cos(time/4 * (Math.PI/180));
+    moonMesh.position.z = -MOONDIST * Math.sin(time/4 * (Math.PI/180));
     cloudMesh.rotation.x += 0.0015;
     cloudMesh.rotation.y += 0.0015;
     cloudMesh.rotation.z += 0.0015;
     starMesh.rotation.y += 0.0001;
-    pointLight.position.x = SUNDIST * Math.cos(time/3 * (Math.PI/180));
-    pointLight.position.z = -SUNDIST * RADIUS * Math.sin(time/3 * (Math.PI/180));
+    pointLight.position.x = SUNDIST * Math.cos(time/2 * (Math.PI/180));
+    pointLight.position.z = -SUNDIST * RADIUS * Math.sin(time/2 * (Math.PI/180));
     render();
     time ++;
 }
