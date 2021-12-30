@@ -72,8 +72,7 @@ const starTexture = new THREE.TextureLoader().load('texture/galaxy.png');
 starTexture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 starTexture.minFilter = THREE.LinearFilter;
 
-const earthMaterial = new THREE.MeshLambertMaterial({
-    roughness: 1,
+const earthMaterial = new THREE.MeshPhongMaterial({
     map: earthMapTexture,
     emissive: "#cbc99a",
     emissiveMap: earthNightTexture,
@@ -82,8 +81,7 @@ const earthMaterial = new THREE.MeshLambertMaterial({
     bumpScale: 0.05,
 });
 
-const moonMaterial = new THREE.MeshLambertMaterial({
-    roughness: 1,
+const moonMaterial = new THREE.MeshPhongMaterial({
     map: moonMapTexture,
     bumpMap: moonBumpTexture,
     bumpScale: 0.001,
